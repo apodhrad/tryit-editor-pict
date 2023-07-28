@@ -1,0 +1,3 @@
+- exec: pict
+  examples:
+    - /tmp/example.txt
