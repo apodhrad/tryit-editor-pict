@@ -2,6 +2,10 @@
 
 Tryit Editor for https://github.com/microsoft/pict
 
+## Screenshot
+
+![Screenshot of tryit-editor-pict](./screenshot.png)
+
 ## Usage
 Run the container image as follows
 
