@@ -1,6 +1,6 @@
 # Tryit Editor for PICT
 
-Tryit Editor for https://github.com/microsoft/pict
+WYSIWYG editor for https://github.com/microsoft/pict. The editor is based on https://github.com/apodhrad/tryit-editor.
 
 ## Screenshot
 
