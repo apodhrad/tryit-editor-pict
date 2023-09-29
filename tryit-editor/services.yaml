@@ -1,0 +1,3 @@
+- exec: pict-tool.sh
+  examples:
+    - /var/tryit-editor/examples/example.txt

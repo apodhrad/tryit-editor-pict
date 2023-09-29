@@ -14,14 +14,10 @@ FROM quay.io/apodhrad/pict:latest as builder
 #
 FROM quay.io/apodhrad/tryit-editor:latest
 
-COPY --from=builder /usr/local/bin/pict /usr/local/bin/pict-orig
+COPY --from=builder / /
 
-COPY pict-html.sh /usr/local/bin/pict
-
-COPY services.yaml example.txt /tmp/
-
-USER tryit-editor
+USER 1001
 
 ENTRYPOINT ["tryit-editor"]
 
-CMD ["start", "-c", "/tmp/services.yaml"]
+CMD ["start", "-c", "/var/tryit-editor/services.yaml"]
