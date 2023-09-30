@@ -1,10 +1,10 @@
-#  ____        _ _     _           
-# | __ ) _   _(_) | __| | ___ _ __ 
-# |  _ \| | | | | |/ _` |/ _ \ '__|
-# | |_) | |_| | | | (_| |  __/ |   
-# |____/ \__,_|_|_|\__,_|\___|_|   
-#                                  
-FROM quay.io/apodhrad/pict:latest as builder
+# ____ ___ ____ _____ 
+#|  _ \_ _/ ___|_   _|
+#| |_) | | |     | |  
+#|  __/| | |___  | |  
+#|_|  |___\____| |_|  
+#
+FROM quay.io/apodhrad/pict:latest as pict
 
 #  __  __       _       
 # |  \/  | __ _(_)_ __  
@@ -14,7 +14,7 @@ FROM quay.io/apodhrad/pict:latest as builder
 #
 FROM quay.io/apodhrad/tryit-editor:latest
 
-COPY --from=builder / /
+COPY --from=pict / /
 
 USER 1001
 
